@@ -71,8 +71,13 @@ class Adafruit_GFX : public Print {
     height(void),
     width(void);
 
-  uint8_t getRotation(void);
-
+  uint8_t 
+	getRotation(void),
+	getCharHeight();
+  
+  uint16_t
+	getStringWidth(String s);
+	
  protected:
   const int16_t
     WIDTH, HEIGHT;   // This is the 'raw' display w/h - never changes
